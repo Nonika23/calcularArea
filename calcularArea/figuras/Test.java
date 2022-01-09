@@ -1,7 +1,28 @@
 package figuras;
 
+/**
+ * @author      Nombre Apellido
+ * @version     1.0
+ * @since       1.0
+ */
 public class Test {
-    public static void main(String[] args){
+    /**
+     * Se testea el método esIgual
+     * <p>
+     * Se crean tres circunferencias y se verifica si son iguales con el método esIgual,
+     * comparando primero teniendo en cuenta los decimales, y la segunda vez sin tenerlos en cuenta.
+     * <p>
+     *
+     */
+    public static void main(String[] args) {
+        Circunferencia c1 = new Circunferencia(5.5);
+        Circunferencia c2 = new Circunferencia(10.1);
+        Circunferencia c3 = new Circunferencia(10.9);
 
+        if (c2.esIgual(false, c3))
+            System.out.println("c2 y c3: iguales sin considerar decimales");
+
+        if (c2.esIgual(true, c3))
+            System.out.println("c2 y c3: iguales considerando decimales");
     }
 }

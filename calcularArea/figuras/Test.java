@@ -12,6 +12,7 @@ public class Test {
      * Se crean tres circunferencias y se verifica si son iguales con el método esIgual,
      * comparando primero teniendo en cuenta los decimales, y la segunda vez sin tenerlos en cuenta.
      * <p>
+     *
      */
     public static void main(String[] args) {
         Circunferencia c1 = new Circunferencia(5.5);
